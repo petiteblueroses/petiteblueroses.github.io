@@ -1,0 +1,52 @@
+.ct-wpforms.wpforms-container {
+
+	.wpforms-form {
+		
+		.wpforms-field-label {
+			font-size: 15px;
+			font-weight: 500;
+		}
+
+		textarea,
+		input[type=text],
+		input[type=email],
+		input[type=date],
+		input[type=datetime],
+		input[type=number],
+		input[type=password],
+		input[type=search],
+		input[type=tel],
+		input[type=url] {
+			border-width: var(--formBorderSize);
+
+			&:not(:focus) {
+				border-color: var(--formBorderInitialColor);
+			}
+
+			&:focus {
+				border-color: var(--formBorderFocusColor);
+			}
+
+			&.wpforms-error {
+				border-width: var(--formBorderSize) !important;
+				border-color: #cc0000 !important;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=date],
+		input[type=datetime],
+		input[type=number],
+		input[type=password],
+		input[type=search],
+		input[type=tel],
+		input[type=url] {
+			height: var(--formInputHeight);
+		}
+
+		button[type=submit] {
+			border: none !important;
+		}
+	}
+}
